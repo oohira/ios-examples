@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,19 +19,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="e08-4U-kTL">
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="e08-4U-kTL">
                                 <rect key="frame" x="96" y="65" width="128" height="128"/>
                             </imageView>
+                            <textField clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type in a name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fDv-H8-U2K">
+                                <rect key="frame" x="91" y="237" width="213" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditingWithSender:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="5Po-f9-xV0"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpf-5U-xNN">
+                                <rect key="frame" x="16" y="242" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type in a number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="evb-74-7z2">
+                                <rect key="frame" x="91" y="283" width="213" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditingWithSender:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="s2f-da-ieY"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFv-fJ-P7a">
+                                <rect key="frame" x="16" y="288" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="fpf-5U-xNN" firstAttribute="leading" secondItem="yFv-fJ-P7a" secondAttribute="leading" id="3ia-bQ-Dfi"/>
+                            <constraint firstItem="fDv-H8-U2K" firstAttribute="trailing" secondItem="evb-74-7z2" secondAttribute="trailing" id="6Tl-hn-gxM"/>
+                            <constraint firstItem="evb-74-7z2" firstAttribute="leading" secondItem="yFv-fJ-P7a" secondAttribute="trailing" constant="8" symbolic="YES" id="OiM-6j-hgY"/>
+                            <constraint firstItem="fpf-5U-xNN" firstAttribute="centerY" secondItem="fDv-H8-U2K" secondAttribute="centerY" id="Qaa-eS-cwg"/>
+                            <constraint firstItem="e08-4U-kTL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="Rck-G5-ib0"/>
                             <constraint firstItem="e08-4U-kTL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SgB-fm-SpK"/>
+                            <constraint firstItem="fpf-5U-xNN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="222" id="aSk-53-KzH"/>
+                            <constraint firstItem="fpf-5U-xNN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cuB-Jd-lUC"/>
+                            <constraint firstItem="fDv-H8-U2K" firstAttribute="leading" secondItem="fpf-5U-xNN" secondAttribute="trailing" constant="8" symbolic="YES" id="fZZ-xi-0rc"/>
+                            <constraint firstItem="yFv-fJ-P7a" firstAttribute="centerY" secondItem="evb-74-7z2" secondAttribute="centerY" id="h5b-R0-HoN"/>
+                            <constraint firstItem="fDv-H8-U2K" firstAttribute="leading" secondItem="evb-74-7z2" secondAttribute="leading" id="kEd-zc-y04"/>
+                            <constraint firstItem="evb-74-7z2" firstAttribute="top" secondItem="fDv-H8-U2K" secondAttribute="bottom" constant="16" id="ume-bc-FNR"/>
+                            <constraint firstItem="fDv-H8-U2K" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vbO-ft-5B6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ptf-XZ-Nh6" appends="YES" id="JV2-rJ-c0w"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="nameField" destination="fDv-H8-U2K" id="MOz-yr-mME"/>
+                        <outlet property="numberField" destination="evb-74-7z2" id="oHq-hh-XIO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ptf-XZ-Nh6">
+                    <connections>
+                        <action selector="onTapGestureRecognized:" destination="BYZ-38-t0r" id="Nwh-ju-u9c"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="138.75" y="129.92957746478874"/>
         </scene>
     </scenes>
     <resources>

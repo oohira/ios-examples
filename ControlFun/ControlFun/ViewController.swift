@@ -10,16 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var numberField: UITextField!
+
+    @IBAction func textFieldDoneEditing(_ sender: UITextField) {
+        sender.resignFirstResponder()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func onTapGestureRecognized(_ sender: AnyObject) {
+        nameField.resignFirstResponder()
+        numberField.resignFirstResponder()
     }
-
-
 }
-
