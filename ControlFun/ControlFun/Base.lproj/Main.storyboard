@@ -52,13 +52,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="5sY-UB-FzZ">
+                                <rect key="frame" x="51" y="330" width="255" height="30"/>
+                                <connections>
+                                    <action selector="onSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="y0P-Ar-ToA"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlE-Rv-KoH">
+                                <rect key="frame" x="16" y="334" width="29" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="29" id="Yi4-Av-Q3f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dlE-Rv-KoH" secondAttribute="bottom" constant="213" id="2I6-P6-oga"/>
                             <constraint firstItem="fpf-5U-xNN" firstAttribute="leading" secondItem="yFv-fJ-P7a" secondAttribute="leading" id="3ia-bQ-Dfi"/>
                             <constraint firstItem="fDv-H8-U2K" firstAttribute="trailing" secondItem="evb-74-7z2" secondAttribute="trailing" id="6Tl-hn-gxM"/>
+                            <constraint firstItem="5sY-UB-FzZ" firstAttribute="trailing" secondItem="evb-74-7z2" secondAttribute="trailing" id="9tJ-bq-10k"/>
                             <constraint firstItem="evb-74-7z2" firstAttribute="leading" secondItem="yFv-fJ-P7a" secondAttribute="trailing" constant="8" symbolic="YES" id="OiM-6j-hgY"/>
+                            <constraint firstItem="dlE-Rv-KoH" firstAttribute="leading" secondItem="yFv-fJ-P7a" secondAttribute="leading" id="QRA-7g-jfe"/>
                             <constraint firstItem="fpf-5U-xNN" firstAttribute="centerY" secondItem="fDv-H8-U2K" secondAttribute="centerY" id="Qaa-eS-cwg"/>
                             <constraint firstItem="e08-4U-kTL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="Rck-G5-ib0"/>
                             <constraint firstItem="e08-4U-kTL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SgB-fm-SpK"/>
@@ -66,7 +84,11 @@
                             <constraint firstItem="fpf-5U-xNN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cuB-Jd-lUC"/>
                             <constraint firstItem="fDv-H8-U2K" firstAttribute="leading" secondItem="fpf-5U-xNN" secondAttribute="trailing" constant="8" symbolic="YES" id="fZZ-xi-0rc"/>
                             <constraint firstItem="yFv-fJ-P7a" firstAttribute="centerY" secondItem="evb-74-7z2" secondAttribute="centerY" id="h5b-R0-HoN"/>
+                            <constraint firstItem="5sY-UB-FzZ" firstAttribute="top" secondItem="evb-74-7z2" secondAttribute="bottom" constant="17" id="jTl-oM-0xH"/>
                             <constraint firstItem="fDv-H8-U2K" firstAttribute="leading" secondItem="evb-74-7z2" secondAttribute="leading" id="kEd-zc-y04"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5sY-UB-FzZ" secondAttribute="bottom" constant="209" id="mdV-Oo-yx8"/>
+                            <constraint firstItem="5sY-UB-FzZ" firstAttribute="leading" secondItem="dlE-Rv-KoH" secondAttribute="trailing" constant="8" symbolic="YES" id="nT2-oR-NFK"/>
+                            <constraint firstItem="dlE-Rv-KoH" firstAttribute="centerY" secondItem="5sY-UB-FzZ" secondAttribute="centerY" id="qbj-Sx-v2I"/>
                             <constraint firstItem="evb-74-7z2" firstAttribute="top" secondItem="fDv-H8-U2K" secondAttribute="bottom" constant="16" id="ume-bc-FNR"/>
                             <constraint firstItem="fDv-H8-U2K" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vbO-ft-5B6"/>
                         </constraints>
@@ -78,6 +100,7 @@
                     <connections>
                         <outlet property="nameField" destination="fDv-H8-U2K" id="MOz-yr-mME"/>
                         <outlet property="numberField" destination="evb-74-7z2" id="oHq-hh-XIO"/>
+                        <outlet property="sliderLabel" destination="dlE-Rv-KoH" id="uR4-xj-sMd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
