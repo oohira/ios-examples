@@ -74,10 +74,36 @@
                     <view key="view" contentMode="scaleToFill" id="veR-9W-Mb2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fqa-OO-9hK">
+                                <rect key="frame" x="27" y="0.0" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="T33-bL-zKo" id="iWT-Ca-eDq"/>
+                                    <outlet property="delegate" destination="T33-bL-zKo" id="XoU-JF-f5j"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYd-au-ykn">
+                                <rect key="frame" x="165" y="298" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="T33-bL-zKo" eventType="touchUpInside" id="E6Q-nG-SH5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2oH-J4-hhV" firstAttribute="trailing" secondItem="Fqa-OO-9hK" secondAttribute="trailing" constant="28" id="0lN-h6-gbh"/>
+                            <constraint firstItem="Fqa-OO-9hK" firstAttribute="centerX" secondItem="2oH-J4-hhV" secondAttribute="centerX" id="CIo-W8-yZy"/>
+                            <constraint firstItem="WYd-au-ykn" firstAttribute="centerX" secondItem="2oH-J4-hhV" secondAttribute="centerX" id="LhW-JK-LJB"/>
+                            <constraint firstItem="Fqa-OO-9hK" firstAttribute="top" secondItem="veR-9W-Mb2" secondAttribute="top" id="rQ0-4U-6hI"/>
+                            <constraint firstItem="WYd-au-ykn" firstAttribute="top" secondItem="Fqa-OO-9hK" secondAttribute="bottom" constant="82" id="uFU-av-hAu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2oH-J4-hhV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon" id="Y5z-ar-Txz"/>
+                    <connections>
+                        <outlet property="dependentPicker" destination="Fqa-OO-9hK" id="bF9-M3-ted"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dg5-D0-Sd6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
