@@ -37,11 +37,17 @@ UIViewController, UITableViewDataSource, UITableViewDelegate {
         var cell = tableView.dequeueReusableCell(withIdentifier: simpleTableIdentifier)
         if (cell == nil) {
             cell = UITableViewCell(
-                style: UITableViewCellStyle.default, reuseIdentifier: simpleTableIdentifier)
+                style: .subtitle, reuseIdentifier: simpleTableIdentifier)
         }
         cell?.imageView?.image = UIImage(named: "star")
         cell?.imageView?.highlightedImage = UIImage(named: "star2")
+
         cell?.textLabel?.text = dwarves[indexPath.row]
+        if indexPath.row < 7 {
+            cell?.detailTextLabel?.text = "Mr Disney"
+        } else {
+            cell?.detailTextLabel?.text = "Mr Tolkien"
+        }
         return cell!
     }
 }
