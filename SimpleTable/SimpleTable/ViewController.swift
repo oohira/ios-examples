@@ -50,5 +50,21 @@ UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
         return cell!
     }
+
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        // Make the first row unselectable
+        return indexPath.row == 0 ? nil : indexPath
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let rowValue = dwarves[indexPath.row]
+        let controller = UIAlertController(
+            title: "Row Selected",
+            message: "You selected \(rowValue)",
+            preferredStyle: .alert)
+        let action = UIAlertAction(title: "Yes", style: .default, handler: nil)
+        controller.addAction(action)
+        present(controller, animated: true, completion: nil)
+    }
 }
 
