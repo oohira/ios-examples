@@ -13,6 +13,7 @@
 		C6203276200CF289008B938E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6203275200CF289008B938E /* Assets.xcassets */; };
 		C6203279200CF289008B938E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6203277200CF289008B938E /* LaunchScreen.storyboard */; };
 		C6FD021F200E46B30051B366 /* NameAndColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD021E200E46B30051B366 /* NameAndColorCell.swift */; };
+		C6FE418F200F86A2005BF34E /* NameAndColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6FE418E200F86A2005BF34E /* NameAndColorCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C6203278200CF289008B938E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C620327A200CF289008B938E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6FD021E200E46B30051B366 /* NameAndColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameAndColorCell.swift; sourceTree = "<group>"; };
+		C6FE418E200F86A2005BF34E /* NameAndColorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NameAndColorCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				C6203277200CF289008B938E /* LaunchScreen.storyboard */,
 				C620327A200CF289008B938E /* Info.plist */,
 				C6FD021E200E46B30051B366 /* NameAndColorCell.swift */,
+				C6FE418E200F86A2005BF34E /* NameAndColorCell.xib */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6FE418F200F86A2005BF34E /* NameAndColorCell.xib in Resources */,
 				C6203279200CF289008B938E /* LaunchScreen.storyboard in Resources */,
 				C6203276200CF289008B938E /* Assets.xcassets in Resources */,
 				C6203274200CF289008B938E /* Main.storyboard in Resources */,
