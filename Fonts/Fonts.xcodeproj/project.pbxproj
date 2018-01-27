@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C60CFD9D2018B2C1002EC49B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60CFD9C2018B2C1002EC49B /* RootViewController.swift */; };
+		C60CFD9F201CAFBE002EC49B /* FontListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60CFD9E201CAFBE002EC49B /* FontListViewController.swift */; };
 		C69F46FB2017693B006A29FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69F46FA2017693B006A29FD /* AppDelegate.swift */; };
 		C69F47002017693B006A29FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C69F46FE2017693B006A29FD /* Main.storyboard */; };
 		C69F47022017693B006A29FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69F47012017693B006A29FD /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		C60CFD9C2018B2C1002EC49B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		C60CFD9E201CAFBE002EC49B /* FontListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontListViewController.swift; sourceTree = "<group>"; };
 		C69F46F72017693B006A29FD /* Fonts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fonts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69F46FA2017693B006A29FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C69F46FF2017693B006A29FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				C69F47062017693B006A29FD /* Info.plist */,
 				C6E7C2432016349A00D10EBC /* FavoritesList.swift */,
 				C60CFD9C2018B2C1002EC49B /* RootViewController.swift */,
+				C60CFD9E201CAFBE002EC49B /* FontListViewController.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C69F46FB2017693B006A29FD /* AppDelegate.swift in Sources */,
+				C60CFD9F201CAFBE002EC49B /* FontListViewController.swift in Sources */,
 				C6E7C2442016349A00D10EBC /* FavoritesList.swift in Sources */,
 				C60CFD9D2018B2C1002EC49B /* RootViewController.swift in Sources */,
 			);
