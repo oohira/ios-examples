@@ -49,4 +49,13 @@ class FontListViewController: UITableViewController {
         let fontName = fontNames[indexPath.row]
         return UIFont(name: fontName, size: cellPointSize)!
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let indexPath = tableView.indexPath(for: sender as! UITableViewCell)!
+        let sizesVC = segue.destination as! FontSizesViewController
+
+        let font = fontForDisplay(atIndexPath: indexPath)
+        sizesVC.font = font
+        sizesVC.navigationItem.title = font.fontName
+    }
 }
