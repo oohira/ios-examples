@@ -10,6 +10,7 @@
 		C60CFD9D2018B2C1002EC49B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60CFD9C2018B2C1002EC49B /* RootViewController.swift */; };
 		C60CFD9F201CAFBE002EC49B /* FontListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60CFD9E201CAFBE002EC49B /* FontListViewController.swift */; };
 		C60CFDA1201E0871002EC49B /* FontSizesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60CFDA0201E0871002EC49B /* FontSizesViewController.swift */; };
+		C69619E9201F64C100412198 /* FontInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69619E8201F64C100412198 /* FontInfoViewController.swift */; };
 		C69F46FB2017693B006A29FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69F46FA2017693B006A29FD /* AppDelegate.swift */; };
 		C69F47002017693B006A29FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C69F46FE2017693B006A29FD /* Main.storyboard */; };
 		C69F47022017693B006A29FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69F47012017693B006A29FD /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		C60CFD9C2018B2C1002EC49B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		C60CFD9E201CAFBE002EC49B /* FontListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontListViewController.swift; sourceTree = "<group>"; };
 		C60CFDA0201E0871002EC49B /* FontSizesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizesViewController.swift; sourceTree = "<group>"; };
+		C69619E8201F64C100412198 /* FontInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontInfoViewController.swift; sourceTree = "<group>"; };
 		C69F46F72017693B006A29FD /* Fonts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fonts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69F46FA2017693B006A29FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C69F46FF2017693B006A29FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				C60CFD9C2018B2C1002EC49B /* RootViewController.swift */,
 				C60CFD9E201CAFBE002EC49B /* FontListViewController.swift */,
 				C60CFDA0201E0871002EC49B /* FontSizesViewController.swift */,
+				C69619E8201F64C100412198 /* FontInfoViewController.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				C60CFDA1201E0871002EC49B /* FontSizesViewController.swift in Sources */,
 				C69F46FB2017693B006A29FD /* AppDelegate.swift in Sources */,
 				C60CFD9F201CAFBE002EC49B /* FontListViewController.swift in Sources */,
+				C69619E9201F64C100412198 /* FontInfoViewController.swift in Sources */,
 				C6E7C2442016349A00D10EBC /* FavoritesList.swift in Sources */,
 				C60CFD9D2018B2C1002EC49B /* RootViewController.swift in Sources */,
 			);

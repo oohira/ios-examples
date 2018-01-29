@@ -52,10 +52,17 @@ class FontListViewController: UITableViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let indexPath = tableView.indexPath(for: sender as! UITableViewCell)!
-        let sizesVC = segue.destination as! FontSizesViewController
-
         let font = fontForDisplay(atIndexPath: indexPath)
-        sizesVC.font = font
-        sizesVC.navigationItem.title = font.fontName
+
+        if segue.identifier == "ShowFontSizes" {
+            let sizesVC = segue.destination as! FontSizesViewController
+            sizesVC.font = font
+            sizesVC.navigationItem.title = font.fontName
+        } else {
+            let infoVC = segue.destination as! FontInfoViewController
+            infoVC.font = font
+            infoVC.navigationItem.title = font.fontName
+            infoVC.favorite = FavoritesList.sharedFavoritesList.favorites.contains(font.fontName)
+        }
     }
 }
