@@ -45,6 +45,24 @@ class FontListViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return showsFavorites
+    }
+
+    override func tableView(_ tableView: UITableView, commit editingStyle:
+        UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if !showsFavorites {
+            return
+        }
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            // Delete the row from the data source
+            let favorite = fontNames[indexPath.row]
+            FavoritesList.sharedFavoritesList.removeFavorite(fontName: favorite)
+            fontNames = FavoritesList.sharedFavoritesList.favorites
+            tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.fade)
+        }
+    }
+
     func fontForDisplay(atIndexPath indexPath: IndexPath) -> UIFont {
         let fontName = fontNames[indexPath.row]
         return UIFont(name: fontName, size: cellPointSize)!
